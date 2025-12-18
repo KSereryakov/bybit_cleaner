@@ -1,0 +1,56 @@
+/* ===== СКРЫТИЕ ЭЛЕМЕНТОВ (только когда расширение активно) ===== */
+
+/* Убираем желтое уведомление о неактивном режиме */
+html.bybit-cleaner-active .fiat-otc__global-notice-wrapper,
+html.bybit-cleaner-active .global-notice-wrapper {
+  display: none !important;
+}
+
+/* Убираем карусель баннеров */
+html.bybit-cleaner-active .fiat-otc__ad-banner-container,
+html.bybit-cleaner-active .fiat-otc__ad-banner-carousel {
+  display: none !important;
+}
+
+/* Убираем ИИ-помощник */
+html.bybit-cleaner-active .fiat-otc-side-bar-aiguide {
+  display: none !important;
+}
+
+/* Убираем сообщение о P2P-провайдерах региона */
+html.bybit-cleaner-active .tipsBox,
+html.bybit-cleaner-active tr.tipsBox {
+  display: none !important;
+}
+
+/* Убираем блок "Популярное для новых пользователей" */
+html.bybit-cleaner-active .new-user-ads-tag-module {
+  display: none !important;
+}
+
+/* ===== КОМПАКТНЫЕ ОТСТУПЫ В ТАБЛИЦЕ ===== */
+
+/* Уменьшаем padding в ячейках */
+html.bybit-cleaner-active .trade-table__tbody td {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+/* Убираем лишние отступы у строк */
+html.bybit-cleaner-active .trade-table__tbody tr {
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+/* Компактнее информация о мерчанте */
+html.bybit-cleaner-active .moly-space-vertical {
+  gap: 0px !important;
+}
+
+html.bybit-cleaner-active .advertiser-info {
+  margin-top: 0px !important;
+}
+
+/* Убираем отступы в moly-space */
+html.bybit-cleaner-active .trade-table__tbody .moly-space {
+  gap: 4px !important;
+}

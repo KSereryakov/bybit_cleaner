@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Bybit P2P Cleaner",
+  "version": "1.0",
+  "description": "Убирает уведомления, баннеры и оптимизирует интерфейс Bybit P2P",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Bybit P2P Cleaner",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.bybit.com/*/p2p/buy/*/*",
+        "https://www.bybit.com/*/p2p/sell/*/*"
+      ],
+      "exclude_matches": [
+        "https://www.bybit.com/*/p2p/buy/*/*/*",
+        "https://www.bybit.com/*/p2p/sell/*/*/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
